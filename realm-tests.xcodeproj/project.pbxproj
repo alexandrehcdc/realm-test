@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7B234B1C2046F4F400E4C56C /* realm_testsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B234B1B2046F4F400E4C56C /* realm_testsTests.swift */; };
 		7B234B272046F4F400E4C56C /* realm_testsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B234B262046F4F400E4C56C /* realm_testsUITests.swift */; };
+		7B35DA6E204826D300028470 /* EntitiesQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35DA6D204826D300028470 /* EntitiesQueries.swift */; };
 		7B594FED2046F64B0025FD7E /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B594FEC2046F64B0025FD7E /* Customer.swift */; };
 		7B594FF12046F6C60025FD7E /* Salesman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B594FF02046F6C60025FD7E /* Salesman.swift */; };
 		7B594FF32046F6CD0025FD7E /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B594FF22046F6CD0025FD7E /* Store.swift */; };
@@ -50,6 +51,7 @@
 		7B234B222046F4F400E4C56C /* realm-testsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "realm-testsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B234B262046F4F400E4C56C /* realm_testsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realm_testsUITests.swift; sourceTree = "<group>"; };
 		7B234B282046F4F400E4C56C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B35DA6D204826D300028470 /* EntitiesQueries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitiesQueries.swift; sourceTree = "<group>"; };
 		7B594FEC2046F64B0025FD7E /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		7B594FF02046F6C60025FD7E /* Salesman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salesman.swift; sourceTree = "<group>"; };
 		7B594FF22046F6CD0025FD7E /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				7B594FF6204729C70025FD7E /* EntitiesOperations.swift */,
+				7B35DA6D204826D300028470 /* EntitiesQueries.swift */,
 			);
 			path = DataLayer;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B594FF32046F6CD0025FD7E /* Store.swift in Sources */,
+				7B35DA6E204826D300028470 /* EntitiesQueries.swift in Sources */,
 				7B594FF7204729C70025FD7E /* EntitiesOperations.swift in Sources */,
 				7B594FF920472B6D0025FD7E /* main.swift in Sources */,
 				7B594FF12046F6C60025FD7E /* Salesman.swift in Sources */,

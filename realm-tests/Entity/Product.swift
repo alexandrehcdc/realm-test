@@ -15,4 +15,8 @@ class Product: Object {
     @objc dynamic var storeId = ""
     @objc dynamic var name = ""
     @objc dynamic var isAvailable = false
+    
+    override static func primaryKey() -> String? {
+        return "id"
+    }
 }

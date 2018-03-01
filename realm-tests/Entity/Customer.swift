@@ -15,6 +15,10 @@ class Customer: Object {
     @objc dynamic var name = ""
     @objc dynamic var surName = ""
     @objc dynamic var wallet = 0.0
-    let orders = List<Product>()
     
+    override static func primaryKey() -> String? {
+        return "id"
+    }
+    
+    let orders = List<Product>()
 }

@@ -14,6 +14,10 @@ class Store: Object {
     @objc dynamic var name = ""
     @objc dynamic var address = ""
     
+    override static func primaryKey() -> String? {
+        return "id"
+    }
+    
     let salesMen = List<Salesman>()
     let productsAvailable = List<Product>()
 }

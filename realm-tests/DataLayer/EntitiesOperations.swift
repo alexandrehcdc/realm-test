@@ -7,8 +7,8 @@
 //
 import RealmSwift
 import Fakery
-
 import Foundation
+
 public class EntityOperations {
     
     private static var INSTANCE: EntityOperations?
@@ -50,6 +50,7 @@ public class EntityOperations {
     
     func mockProduct(storeId: String?) -> Product {
         let product = Product()
+        
         product.id = NSUUID().uuidString
         product.storeId = (storeId != nil) ? storeId! : ""
         product.name = faker.app.name()
@@ -60,10 +61,23 @@ public class EntityOperations {
     
     func mockSaleman(storeId: String?) -> Salesman {
         let saleMan = Salesman()
+        var index = 0
         saleMan.id = NSUUID().uuidString
         saleMan.storeId = (storeId != nil) ? storeId! : ""
         saleMan.name = faker.name.firstName()
         saleMan.surName = faker.name.lastName()
+//
+
+        saleMan.sales.append(mockProduct(storeId: storeId!))
+        saleMan.sales.append(mockProduct(storeId: storeId!))
+        saleMan.sales.append(mockProduct(storeId: storeId!))
+        saleMan.sales.append(mockProduct(storeId: storeId!))
+        saleMan.sales.append(mockProduct(storeId: storeId!))
+        saleMan.sales.append(mockProduct(storeId: storeId!))
+        saleMan.sales.append(mockProduct(storeId: storeId!))
+        saleMan.sales.append(mockProduct(storeId: storeId!))
+        
+        
         
         return saleMan
     }
@@ -72,12 +86,14 @@ public class EntityOperations {
         let store = Store()
         var index = 0
         
+        
         while index < 10 {
             store.productsAvailable.append(mockProduct(storeId: store.id))
             store.salesMen.append(mockSaleman(storeId: store.id))
             index += 1
         }
         
+        store.id = NSUUID().uuidString
         store.name = faker.company.name()
         store.address = "\(faker.address.city()), \(faker.address.streetAddress(includeSecondary: true)), \(faker.address.secondaryAddress())"
         

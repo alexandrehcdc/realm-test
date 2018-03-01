@@ -12,14 +12,15 @@ import RealmSwift
 func main() {
     
     let realm = try! Realm()
-    let entitiesOperations = EntityOperations.getInstance(realm: realm)
+//    let entitiesOperations = EntityOperations.getInstance(realm: realm)
+    let entitiesQueries = EntitiesQueries.getInstance(realm: realm)
     var index = 0
-    while index < 10 {
-        entitiesOperations.mockAndSaveStore()
-        index += 1
-    }
     
-    
+//    while index < 40 {
+//        entitiesOperations.mockAndSaveStore()
+//        index += 1
+//    }
+    let teste = entitiesQueries.findAllProductsBy(storeId: "")
     print("main being executed")
 }
 

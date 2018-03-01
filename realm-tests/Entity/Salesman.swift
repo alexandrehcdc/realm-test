@@ -14,6 +14,10 @@ class Salesman: Object {
     @objc dynamic var storeId = ""
     @objc dynamic var name = ""
     @objc dynamic var surName = ""
-    let sales = List<Product>()
     
+    override static func primaryKey() -> String? {
+        return "id"
+    }
+
+    let sales = List<Product>()
 }
